@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react'
-import TodoInput from './components/ToDoInput.jsx'
+import TodoInput from './components/Temp.jsx'
 import TodoItem from './components/ToDoItem.jsx'
 import Filters, { FILTERS } from './components/Filters.jsx'
 import { useLocalStorage } from './hooks/useLocalStorage.js'
@@ -11,7 +11,7 @@ export default function App() {
     { id: uid(), title: 'Estudar React', completed: false },
     { id: uid(), title: 'Construir uma lista de tarefas', completed: true },
   ])
-  
+
   const [filter, setFilter] = useState('all')
   const visible = useMemo(() => todos.filter(FILTERS[filter]), [todos, filter])
   const activeCount = useMemo(() => todos.filter(t => !t.completed).length, [todos])
