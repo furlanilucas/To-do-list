@@ -1,16 +1,113 @@
-# React + Vite
+# 📝 Lista de Tarefas — React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Uma aplicação simples e moderna de **lista de tarefas (To-do List)** desenvolvida com **React 19** e **Vite 7**, usando JavaScript puro e persistência em **LocalStorage**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Funcionalidades
 
-## React Compiler
+✅ Adicionar novas tarefas  
+✅ Marcar como concluída / reabrir  
+✅ Editar título com duplo clique  
+✅ Excluir tarefas  
+✅ Filtros: **Todas**, **Ativas**, **Concluídas**  
+✅ Limpar todas as concluídas  
+✅ Persistência automática no navegador  
+✅ Interface escura e responsiva  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tecnologias utilizadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- [React 19](https://react.dev)
+- [Vite 7](https://vitejs.dev)
+- JavaScript (ESNext)
+- HTML5 + CSS3 (tema dark)
+- LocalStorage API
+
+---
+
+## 📂 Estrutura do projeto
+
+```
+todo-react/
+├── index.html
+├── package.json
+├── vite.config.js
+└── src/
+    ├── App.jsx
+    ├── main.jsx
+    ├── styles.css
+    ├── hooks/
+    │   └── useLocalStorage.js
+    └── components/
+        ├── TodoInput.jsx
+        ├── TodoItem.jsx
+        └── Filters.jsx
+```
+
+---
+
+## ⚙️ Como rodar o projeto localmente
+
+1. **Clonar o repositório**
+   ```bash
+   git clone https://github.com/seu-usuario/todo-react.git
+   cd todo-react
+   ```
+
+2. **Instalar as dependências**
+   ```bash
+   npm install
+   ```
+
+3. **Executar o servidor de desenvolvimento**
+   ```bash
+   npm run dev
+   ```
+   O projeto será aberto em:  
+   👉 http://localhost:5173
+
+---
+
+## 🏗️ Build de produção
+
+Gera a versão otimizada para deploy:
+
+```bash
+npm run build
+npm run preview
+```
+
+A pasta final será `dist/`.
+
+---
+
+## 💡 Dicas de uso
+
+- Clique duas vezes em uma tarefa para **editar o título**.  
+- Use os botões **"Ativas"**, **"Concluídas"** e **"Todas"** para filtrar.  
+- Clique em **“Limpar concluídas”** para remover as finalizadas.  
+- As tarefas ficam salvas mesmo após fechar o navegador.
+
+---
+
+## 🌐 Deploy
+
+Este projeto pode ser hospedado facilmente em:
+- [Vercel](https://vercel.com)
+- [Netlify](https://www.netlify.com)
+- GitHub Pages (`npm run build` → branch `dist`)
+
+---
+
+## ✨ Créditos
+
+Desenvolvido por **Lucas Furlani da Silva**  
+📧 [furlani.lucas7@gmail.com](mailto:furlani.lucas7@gmail.com)  
+🌐 [linkedin.com/in/lucasfurlani](https://linkedin.com/in/lucasfurlani)
+
+---
+
+### 🧩 Licença
+Este projeto é de uso livre para fins educacionais e portfólio.
