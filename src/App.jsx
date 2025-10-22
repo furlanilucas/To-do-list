@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react'
-import TodoInput from './components/Temp.jsx'
+import TodoInput from './components/TodoInput.jsx'
 import TodoItem from './components/ToDoItem.jsx'
 import Filters, { FILTERS } from './components/Filters.jsx'
 import { useLocalStorage } from './hooks/useLocalStorage.js'
